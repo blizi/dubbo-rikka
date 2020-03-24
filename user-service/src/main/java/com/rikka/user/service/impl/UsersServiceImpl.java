@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * <p>
- *  服务实现类
+ * 服务实现类
  * </p>
  *
  * @author rikka
@@ -30,7 +30,8 @@ public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements
     public String test() {
         return rolesService.test();
     }
-    public String error(){
+
+    public String error() {
         System.out.println("error");
         return "error";
     }

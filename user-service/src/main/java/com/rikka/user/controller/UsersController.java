@@ -1,9 +1,7 @@
 package com.rikka.user.controller;
 
 
-import com.rikka.user.pojo.Users;
 import com.rikka.user.service.UsersService;
-import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +12,7 @@ import java.util.List;
 
 /**
  * <p>
- *  前端控制器
+ * 前端控制器
  * </p>
  *
  * @author rikka
@@ -28,7 +26,7 @@ public class UsersController {
     UsersService service;
 
     @GetMapping
-    public String test(){
+    public String test() {
         return service.test();
     }
 }

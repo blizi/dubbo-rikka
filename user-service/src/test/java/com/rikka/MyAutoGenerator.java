@@ -59,7 +59,7 @@ public class MyAutoGenerator {
         StrategyConfig strategy = new StrategyConfig();
         //strategy.setInclude("ucenter"+"_\\w*"); // 映射的表明
         strategy.setInclude("users"); // 映射的表名
-        strategy.setNaming(NamingStrategy.underline_to_camel) ;//数据映射到实体类的策略
+        strategy.setNaming(NamingStrategy.underline_to_camel);//数据映射到实体类的策略
         //strategy.setTablePrefix("ucenter");//不生成表的前缀
 
         strategy.setEntityLombokModel(true);// 自动添加lombok的注解
