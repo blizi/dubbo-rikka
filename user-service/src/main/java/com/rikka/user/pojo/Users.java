@@ -52,5 +52,7 @@ public class Users implements Serializable {
 
     private String name;
 
+    @TableField("password")
+    private String password;
 
 }

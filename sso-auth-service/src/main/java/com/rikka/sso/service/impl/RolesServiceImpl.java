@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
  * @since 2020-03-23
  */
 @Component
-@Service(version = "sso-provider")
+@Service
 public class RolesServiceImpl extends ServiceImpl<RolesMapper, Roles> implements RolesService {
 
     @Value("${dubbo.application.name}")

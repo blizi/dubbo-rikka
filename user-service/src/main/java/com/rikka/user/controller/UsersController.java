@@ -26,6 +26,7 @@ public class UsersController {
     UsersService service;
 
     @GetMapping
+
     public String test() {
         return service.test();
     }

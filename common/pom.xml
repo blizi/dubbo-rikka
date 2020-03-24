@@ -116,7 +116,26 @@
         </dependency>
 <!--        dubbo end -->
 
-
+<!--jwt begin-->
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+        </dependency>
+<!--jwt end-->
+        <!-- spring-boot-devtools热启动依赖包 start-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+            <scope>true</scope>
+        </dependency>
+        <!-- spring-boot-devtools热启动依赖包 end-->
+<!--hutool begin-->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+        </dependency>
+<!--hutool end-->
     </dependencies>
 
 </project>

@@ -2,6 +2,7 @@ package com.rikka.user.service;
 
 import com.rikka.user.pojo.Users;
 import com.baomidou.mybatisplus.extension.service.IService;
+import org.apache.catalina.User;
 
 /**
  * <p>
@@ -13,4 +14,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface UsersService extends IService<Users> {
     String test();
+    Users selectUserByName(String name);
 }

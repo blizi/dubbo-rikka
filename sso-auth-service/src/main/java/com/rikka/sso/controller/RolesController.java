@@ -24,23 +24,8 @@ public class RolesController {
     RolesService rolesService;
 
     @GetMapping()
-    public void test() {
-        Roles roles = new Roles();
-        roles.setRoleName("normal");
-        rolesService.save(roles);
+    public String test() {
+        return "aaaa";
     }
-
-    @GetMapping("delete")
-    public void test1() {
-        rolesService.removeById(1242050338727522306L);
-    }
-
-    @GetMapping("update")
-    public void test2() {
-        Roles roles = rolesService.getById("123");
-        roles.setRoleName("12121");
-        rolesService.updateById(roles);
-    }
-
 }
 

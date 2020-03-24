@@ -32,10 +32,28 @@
         <velocity.engine.version>2.0</velocity.engine.version>
         <sl4j.version>1.7.25</sl4j.version>
         <shiro.version>1.4.0</shiro.version>
+        <jwt.version>3.4.0</jwt.version>
+        <hutool.version>5.2.4</hutool.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+<!--            hutool begin-->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+<!--            hutool end-->
+
+<!--            jwt token begin-->
+            <dependency>
+                <groupId>com.auth0</groupId>
+                <artifactId>java-jwt</artifactId>
+                <version>${jwt.version}</version>
+            </dependency>
+<!--jwt token end-->
+
             <!-- Apache Dubbo  begin-->
 <!--            <dependency>-->
 <!--                <groupId>org.apache.dubbo</groupId>-->

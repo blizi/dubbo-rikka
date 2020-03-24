@@ -23,14 +23,19 @@
             <artifactId>common</artifactId>
             <version>${parent.version}</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.rikka</groupId>-->
+<!--            <artifactId>user-service</artifactId>-->
+<!--            <version>${parent.version}</version>-->
+<!--        </dependency>-->
         <!--        ours end-->
 
 
         <!--shiro begin-->
-<!--        <dependency>-->
-<!--            <groupId>org.apache.shiro</groupId>-->
-<!--            <artifactId>shiro-spring</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+        </dependency>
         <!--            shiro end-->
     </dependencies>
 
