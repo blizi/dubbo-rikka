@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.rikka</groupId>
+        <artifactId>dependencies</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../dependencies/pom.xml</relativePath> <!-- lookup parent from repository -->
+    </parent>
+
+
+    <artifactId>sso-auth-service</artifactId>
+    <name>sso-auth-service</name>
+    <description>登录 认证授权 服务</description>
+
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!--        ours begin-->
+        <dependency>
+            <groupId>com.rikka</groupId>
+            <artifactId>common</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <!--        ours end-->
+
+
+        <!--shiro begin-->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+        </dependency>
+        <!--            shiro end-->
+    </dependencies>
+
+
+</project>
