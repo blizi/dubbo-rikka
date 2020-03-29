@@ -10,6 +10,8 @@ import com.rikka.common.constant.SecretConstant;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
+import java.util.function.Consumer;
 
 public class JwtUtil {
     /**
@@ -46,8 +48,14 @@ public class JwtUtil {
         return verify.getAudience();
     }
 
-//    public static void main(String[] args) {
-//        getToken(1221L);
-//    }
+    public static void main(String[] args) {
+        Object o = Optional.ofNullable(new Integer(123)).orElse(null);
+        System.out.println(o);
+        System.out.println();
+        Optional.ofNullable(new Integer(12)).ifPresent(a-> System.out.println(a));
+
+
+
+    }
 
 }

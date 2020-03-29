@@ -43,12 +43,7 @@ public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements
     public Users selectUserByName(String name) {
         Map<String,Object> map = new HashMap<>();
         map.put("name",name);
-        try {
-            return usersMapper.selectByMap(map).stream().findFirst().get();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null;
+        return usersMapper.selectByMap(map).get(0);
     }
 
     public String error() {
